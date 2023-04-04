@@ -82,28 +82,6 @@ years = [datetime.today().year, datetime.today().year + 1]
 months = list(calendar.month_name[1:])
 
 
-def get_all_periods():
-    items = db.fetch_all_periods()
-    periods = [item["key"] for item in items]
-    return periods
-
-def get_all_assets():
-    items = db.fetch_assets()
-    assets = [item["key"] for item in items]
-    return assets
-
-
-
-
-@st.experimental_memo
-def get_img_as_base64(file):
-    with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-global img
-img = get_img_as_base64("s.jpg")
-
 
 hide_st_style = """
             <style>
