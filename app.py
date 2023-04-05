@@ -85,7 +85,6 @@ months = list(calendar.month_name[1:])
 
 hide_st_style = """
             <style>
-            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
             </style>
